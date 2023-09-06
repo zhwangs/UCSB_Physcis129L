@@ -145,7 +145,13 @@
 .dropdown-content a:hover {
 	background-color: #ddd;
 }
+.a-val {
+	display: block; /* Make the <a> element a block-level element */
+	text-align: center; /* Center-align the text within the <a> element */
 
+	color: white; /* Set the text color to white */
+	 
+}
 /* Show the dropdown content when hovering over the dropdown button */
 .dropdown:hover .dropdown-content {
 	display: block;
