@@ -21,7 +21,7 @@
 		margin: 0;
 		padding: 0;
 		background: #333;
-		color: #5f6f81;
+		color: #ccd2d9;
 		list-style: none;
 		text-transform: none;
 		font-weight: 300;
@@ -41,7 +41,7 @@
 .gn-menu-main a {
 		display: block;
 		height: 100%;
-		color: #5f6f81;
+		color: #efefef;
 		text-decoration: none;
 		cursor: pointer;
 }
