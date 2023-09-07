@@ -194,6 +194,15 @@
     top: 0px;
     left: 600px;
 } 
+
+.logo-loc{
+    position: relative;
+    text-align: center;
+    background: none;
+	z-index: 1;
+    top: 30px;
+    left: 500px;
+}
 .transparent-image {
 	/* filter: contrast(2.5); */
 	opacity:  0.5; /* Change this value to adjust the transparency (0.5 means 50% opacity) */
