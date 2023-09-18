@@ -185,14 +185,26 @@
 
 .center-post-courseinfo{
 	position: relative;
-    top: 0px;
+    top: 5px;
     left: 500px;
 }
 
 .center-post-getstart{
 	position: relative;
-    top: 0px;
+    top: 5px;
     left: 600px;
+} 
+
+.center-post-unix{
+	position: relative;
+    top: 50px;
+    left: 200px;
+} 
+
+.center-post-git{
+	position: relative;
+    top: 50px;
+    left: 300px;
 } 
 
 .logo-loc{
