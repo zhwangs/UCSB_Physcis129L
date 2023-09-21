@@ -139,7 +139,16 @@
 					between a local branch named "main" and a remote branch called "origin/main." 
 					The orange dots on the graph represent commit events, which are labeled as "init," "A," and "B," respectively.
 					Synchronization between two branches can be achieved through push and pull operations. </p>
-		
+					<img src=" static/figures/get_merge.png" class="transparent-image2" class="fluidimg" width="700" height="400" />
+					<p style="color: rgb(255, 255, 255);"> A graph illustrates the general fetch operation to the local branch named "main". 
+					  The orange dots on the graph represent previously commit events, which are labeled as "init," "A," and "B," respectively.
+					  The green dot on the graph represents the newly commit event. 
+					  The blue dots on the graph represent the changes have made by other collaborators. 
+					  Let's say you have made some changes in your local main branch based on the orange dots (commits). 
+					  You also want to update your local main branch with the remote main branch, updated by your collaborators, e.g. blue dots, D,E. 
+					  The Fetch operations are able to acquire <strong>all</strong> remote commits (blue dots) that are absent in the local main branch. 
+					  However, we must tell git how to group them. 
+		  
 				</article>
 		<article class="footer_column">
 		  <h3  style="color: aliceblue", class="header-h1"> . </h3>
@@ -151,7 +160,7 @@
 			 We then can commit the change with a short descriptions of the changes. Please note that it only applies to those staged changes.
 			  Synchronization between two branches can be achieved through push and pull operations. </p>
 			  <p style="color: rgb(255, 255, 255);">  </p>
-			  <img src=" static/figures/get_fetch.png" class="transparent-image2" class="fluidimg" width="700" height="300" />
+			  <img src=" static/figures/get_fetch.png" class="transparent-image2" class="fluidimg" width="700" height="400" />
 			  <p style="color: rgb(255, 255, 255);"> A graph illustrates the general fetch operation to the local branch named "main". 
 				The orange dots on the graph represent previously commit events, which are labeled as "init," "A," and "B," respectively.
 				The green dot on the graph represents the newly commit event. 
@@ -160,7 +169,16 @@
 				You also want to update your local main branch with the remote main branch, updated by your collaborators, e.g. blue dots, D,E. 
 				The Fetch operations are able to acquire <strong>all</strong> remote commits (blue dots) that are absent in the local main branch. 
 				However, we must tell git how to group them. 
-	
+				<img src=" static/figures/get_rebase.png" class="transparent-image2" class="fluidimg" width="700" height="400" />
+				<p style="color: rgb(255, 255, 255);"> A graph illustrates the general fetch operation to the local branch named "main". 
+				  The orange dots on the graph represent previously commit events, which are labeled as "init," "A," and "B," respectively.
+				  The green dot on the graph represents the newly commit event. 
+				  The blue dots on the graph represent the changes have made by other collaborators. 
+				  Let's say you have made some changes in your local main branch based on the orange dots (commits). 
+				  You also want to update your local main branch with the remote main branch, updated by your collaborators, e.g. blue dots, D,E. 
+				  The Fetch operations are able to acquire <strong>all</strong> remote commits (blue dots) that are absent in the local main branch. 
+				  However, we must tell git how to group them. 
+	  
 			</article>
 			
 			<div class="sec3-container">
