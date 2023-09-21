@@ -122,51 +122,54 @@
 		  <div class="sec3-container">
 		<article class="footer_column">
 
-			<h3 style="color: aliceblue", class="header-h1"> Oracle VM VirtualBox and Ubuntu</h3>
-			<!-- <img src="  ../static/figures/Jupternew.png" class="fluidimg_small_left"> -->
+			<h3 style="color: aliceblue", class="header-h1"> Managing files with Git </h3>
 
-			<h3 style="color: aliceblue"  > 			   </h3>
-	  
-			<p style="color: rgb(255, 255, 255); line-height: 1.5; ">VirtualBox runs on Windows, Linux, macOS, and it is a powerful tool to access and explore various operating systems. To install the Oracle VM VirtualBox, visit <b>//www.virtualbox.org/wiki/Downloads</b>. Make sure to check the version. 
-				After the downolads, you need to specify the ISO image, for Ubuntu Desktop, visit <b> https://ubuntu.com/download/desktop</b>. We will use Ubuntu 22.04.3 LTS. 
-				 </p>
-				 <h3 style="color: aliceblue" >  . </h3>
-				 <h3 style="color: aliceblue" > Step 1: Shown in the right image. Open the VirtualBox Manager, and click New. Enter a Desktop name, and ISO image. Make sure to select <code>Linux</code> and Ubuntu 22.04.3 LTS, Jammy Jellyfish. Check Unattended Installation. </h3>
-<h3 style="color: aliceblue" >  . </h3>
-	  
-<h3 style="color: aliceblue" > Step 2: Allocate CPU cores, RAM, and disk usage. Make sure the ram is larger than 2GB. In addition, you need at least 15.7GB disk space to install Ubuntu.</h3>
-<h3 style="color: aliceblue" >  . </h3>
-	  
-<h3 style="color: aliceblue" > Step 3: Run it in the VirtualBox Manager, and enter "try or install Ubuntu". Following the instructions.  </h3>
-	 
-		</article>
+			<p style="color: rgb(255, 255, 255); line-height: 1.5; ">As one of the most influential packages, Git tracks changes in source code during software development. 
+				It is a powerful and widely adopted tool that allows multiple developers to collaborate on the same project and manage versions efficiently.
+				Here are some basic ideas of Git to get you started. 
+				A Git <strong>repository</strong> is a directory that contains all the files and the entire history of a project.
+				It can be a local repository or a remote one like GitHub, e.g. <strong>Fig.1</strong>.
+				 The basic git version control contains a few key concepts, including <strong>Branch, Commit, Push, Pull, and Pull request</strong>. 
+				 Version management is a complex task currently undergoing intensive research and development efforts. 
+				 Although we won't go into details, we will briefly touch upon conflict control, e.g. <strong>Merge or Rebase</strong>.  
+				 We will introduce them sequentially.	 </p>
+				 <p style="color: rgb(255, 255, 255);">  </p>
+				 <img src=" static/figures/get_push_fetch.png" class="transparent-image2" class="fluidimg" width="700" height="400" />
+				<p style="color: rgb(255, 255, 255);"> A graph illustrates the interaction 
+					between a local branch named "main" and a remote branch called "origin/main." 
+					The orange dots on the graph represent commit events, which are labeled as "init," "A," and "B," respectively.
+					Synchronization between two branches can be achieved through push and pull operations. </p>
+		
+				</article>
 		<article class="footer_column">
-		  <h3  style="color: aliceblue", class="header-h1"> Instructions </h3>
-		   <p style="color: rgb(255, 255, 255);">  </p>
-		   <img src=" static/figures/VM_1.png" class="transparent-image2" class="fluidimg" width="700" height="400" />
-			 
-			<p style="color: rgb(255, 255, 255);">  . </p>
-				<p style="color: rgb(255, 255, 255);">  . </p>
-		 
+		  <h3  style="color: aliceblue", class="header-h1"> . </h3>
+		  <img src=" static/figures/get_commit.png" class="transparent-image2" class="fluidimg" width="700" height="350" />
+		  <p style="color: rgb(255, 255, 255);"> A graph illustrates the commit operation to the local branch named "main". 
+			  The orange dots on the graph represent previously commit events, which are labeled as "init," "A," and "B," respectively.
+			  The green dot on the graph represents the newly commit event in the local main branch. 
+			  To commit a local file updates to the main branch, we first select all files we want to append to the main branch, and <strong> stage</strong> them. 
+			 We then can commit the change with a short descriptions of the changes. Please note that it only applies to those staged changes.
+			  Synchronization between two branches can be achieved through push and pull operations. </p>
+			  <p style="color: rgb(255, 255, 255);">  </p>
+			  <img src=" static/figures/get_fetch.png" class="transparent-image2" class="fluidimg" width="700" height="300" />
+			  <p style="color: rgb(255, 255, 255);"> A graph illustrates the general fetch operation to the local branch named "main". 
+				The orange dots on the graph represent previously commit events, which are labeled as "init," "A," and "B," respectively.
+				The green dot on the graph represents the newly commit event. 
+				The blue dots on the graph represent the changes have made by other collaborators. 
+				Let's say you have made some changes in your local main branch based on the orange dots (commits). 
+				You also want to update your local main branch with the remote main branch, updated by your collaborators, e.g. blue dots, D,E. 
+				The Fetch operations are able to acquire <strong>all</strong> remote commits (blue dots) that are absent in the local main branch. 
+				However, we must tell git how to group them. 
 	
 			</article>
 			
 			<div class="sec3-container">
 				<article class="footer_column">
 		
-					<h3 style="color: aliceblue", class="header-h1"> Git and Github Account</h3>
+					<h3 style="color: aliceblue", class="header-h1"> .</h3>
 					<!-- <img src="  ../static/figures/Jupternew.png" class="fluidimg_small_left"> -->
 		
 					<h3 style="color: aliceblue"  > 			   </h3>
-			  
-					<p style="color: rgb(255, 255, 255); line-height: 1.5; ">we will discuss local and remote version control using Git. Therefore, you need the Git to be installed in your (Linux) comptuer. You will also need a Github account for remote synchronization.						 </p>
-						 <h3 style="color: aliceblue" >  . </h3>
-						 <h3 style="color: aliceblue" > Install and check Git, following the commands on the right. </h3>
-		<h3 style="color: aliceblue" >  . </h3>
-			  
-		<h3 style="color: aliceblue" > To create an account on Github, visit <b>https://github.com/</b></h3>
-		<h3 style="color: aliceblue" >  . </h3>
-			  
  
 				</article>
 				<article class="footer_column">
