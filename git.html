@@ -144,11 +144,18 @@
 					  The orange dots on the graph represent previously commit events, which are labeled as "init," "A," and "B," respectively.
 					  The green dot on the graph represents the newly commit event. 
 					  The blue dots on the graph represent the changes have made by other collaborators. 
-					  Let's say you have made some changes in your local main branch based on the orange dots (commits). 
-					  You also want to update your local main branch with the remote main branch, updated by your collaborators, e.g. blue dots, D,E. 
-					  The Fetch operations are able to acquire <strong>all</strong> remote commits (blue dots) that are absent in the local main branch. 
-					  However, we must tell git how to group them. 
-		  
+					 The violet dot on the graph represent the commit for the merge operation. 
+					 Merge operation saves the the divergent between the local main branch and remote origin/main into a new commit, e.g. dot F. 
+					 In other words, the merrge operation perserves the branch difference at the dot F in version history.  </p>
+					 <img src=" static/figures/git_setup.png" class="transparent-image2" class="fluidimg" width="700" height="700" />
+					 <p style="color: rgb(255, 255, 255);"> Initialize Git repository and push the first commit to the remote. </p>
+					 <img src=" static/figures/git_commit_example2.png" class="transparent-image2" class="fluidimg" width="700" height="500" />
+					 <p style="color: rgb(255, 255, 255);"> Push an update commit to the remote. </p>
+					 <img src=" static/figures/git_commit_example3.png" class="transparent-image2" class="fluidimg" width="700" height="700" />
+					 <p style="color: rgb(255, 255, 255);"><strong>(A)</strong> Creating a new branch and commit changes in it.</p>
+					 <img src=" static/figures/git_commit_example6.png" class="transparent-image2" class="fluidimg" width="700" height="800" />
+					 <p style="color: rgb(255, 255, 255);">  <strong>(D)</strong>  Pull and version restoration. </p> 
+		 
 				</article>
 		<article class="footer_column">
 		  <h3  style="color: aliceblue", class="header-h1"> . </h3>
@@ -168,17 +175,23 @@
 				Let's say you have made some changes in your local main branch based on the orange dots (commits). 
 				You also want to update your local main branch with the remote main branch, updated by your collaborators, e.g. blue dots, D,E. 
 				The Fetch operations are able to acquire <strong>all</strong> remote commits (blue dots) that are absent in the local main branch. 
-				However, we must tell git how to group them. 
+				However, we must tell git how to group them. </p>
 				<img src=" static/figures/get_rebase.png" class="transparent-image2" class="fluidimg" width="700" height="400" />
 				<p style="color: rgb(255, 255, 255);"> A graph illustrates the general fetch operation to the local branch named "main". 
 				  The orange dots on the graph represent previously commit events, which are labeled as "init," "A," and "B," respectively.
 				  The green dot on the graph represents the newly commit event. 
 				  The blue dots on the graph represent the changes have made by other collaborators. 
-				  Let's say you have made some changes in your local main branch based on the orange dots (commits). 
-				  You also want to update your local main branch with the remote main branch, updated by your collaborators, e.g. blue dots, D,E. 
-				  The Fetch operations are able to acquire <strong>all</strong> remote commits (blue dots) that are absent in the local main branch. 
-				  However, we must tell git how to group them. 
-	  
+					As the name suggested, rebase operation appends commits from others, D,E to the existing local main branch, 
+					and assign them new name D',E'. We see that the history of branching is destroyed. </p>
+					<img src=" static/figures/git_commit_example1.png" class="transparent-image2" class="fluidimg" width="700" height="800" />
+					<p style="color: rgb(255, 255, 255);"> example of staging, commiting, and uncommiting.</p> 
+					<img src=" static/figures/git_commit_example4.png" class="transparent-image2" class="fluidimg" width="700" height="800" />
+					<p style="color: rgb(255, 255, 255);">  <strong>(B)</strong> create new remote branch. </p> 
+					<img src=" static/figures/git_commit_example5.png" class="transparent-image2" class="fluidimg" width="700" height="800" />
+					<p style="color: rgb(255, 255, 255);">  <strong>(C)</strong> merge two branches and remote updates. </p> 
+					<img src=" static/figures/git_commit_example7.png" class="transparent-image2" class="fluidimg" width="700" height="800" />
+					<p style="color: rgb(255, 255, 255);">  <strong>(E)</strong> Clone a git repository. </p> 
+		
 			</article>
 			
 			<div class="sec3-container">
@@ -191,14 +204,8 @@
  
 				</article>
 				<article class="footer_column">
-				  <h3  style="color: aliceblue", class="header-h1"> Instructions </h3>
-				  <div class="code-container">
-					<pre><code class="code">
-			 #zhwang@zhwangserver:~/Desktop$ sudo apt update
-			 #zhwang@zhwangserver:~/Desktop$ sudo apt install git
-			 #zhwang@zhwangserver:~/Desktop$ git --version
-					</code></pre>
-				</div>
+				  <h3  style="color: aliceblue", class="header-h1"> . </h3>
+ 
 				<p style="color: rgb(255, 255, 255);">  . </p>
 				<p style="color: rgb(255, 255, 255);">  . </p>
 		 
@@ -210,27 +217,18 @@
 					<div class="sec3-container">
 						<article class="footer_column">
 				
-							<h3 style="color: aliceblue", class="header-h1"> Anaconda Distribution </h3>
+							<h3 style="color: aliceblue", class="header-h1"> . </h3>
 							<!-- <img src="  ../static/figures/Jupternew.png" class="fluidimg_small_left"> -->
 				
 							<h3 style="color: aliceblue"  > 			   </h3>
 					  
-							<p style="color: rgb(255, 255, 255); line-height: 1.5; ">In the remaining of the course, we will use Jupyter notebooks for completing problem sets. Conda environment has great supports on Python. I recommend Anaconda Distribution simplely because it runs on Windows, Linux, macOS. Visit https://www.anaconda.com/download#downloads to download. If you are not familar with Ubuntu, you are welcome to download it via the graphical installer on Windows or MacOS.</p>
-								 <h3 style="color: aliceblue" >  . </h3>
-								 <h3 style="color: aliceblue" > If you want to install Conda on Ubuntu, you can first download the .sh script, and then run the code on the right. </h3>
-				<h3 style="color: aliceblue" >  . </h3>
+							 				<h3 style="color: aliceblue" >  . </h3>
  
  
 						</article>
 						<article class="footer_column">
-							<h3  style="color: aliceblue", class="header-h1"> Instructions </h3>
-							<div class="code-container">
-							  <pre><code class="code">
-					   #zhwang@zhwangserver:~/Desktop$ cd /path/to/your/script
-					   #zhwang@zhwangserver:~/Desktop$ sudo chmod +x  Anaconda3-2023.07-2-Linux-x86_64.sh.sh
-					   #zhwang@zhwangserver:~/Desktop$ ./Anaconda3-2023.07-2-Linux-x86_64.sh
-							  </code></pre>
-						  </div>
+							<h3  style="color: aliceblue", class="header-h1">.</h3>
+ 
 						  <p style="color: rgb(255, 255, 255);">  . </p>
 						  <p style="color: rgb(255, 255, 255);">  . </p>
 				   
