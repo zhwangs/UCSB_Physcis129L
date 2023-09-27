@@ -280,7 +280,7 @@
 	width: 700px;
 	height: 200px;
 	position: relative; /* Set the position to relative */
-	left: 10%; /* Move the center horizontally */
+	left:  0%; /* Move the center horizontally */
 	top: 50%; /* Move the center vertically */
 }
 
