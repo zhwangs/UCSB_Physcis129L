@@ -17,9 +17,21 @@
 <link href="  static/css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
 <link href=" static/css/layout1.css" rel="stylesheet" type="text/css">
 	<script src=" static/js/mainpage.js"></script>
+	<script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      }
+    });
+  </script>
 	</head>
 	<body>
 <!-- ------------------------------------------------------------------------------------------------				 -->
+
 
 
 <div class="container">
@@ -51,6 +63,7 @@
 						<div class="dropdown-content">
 							<a href="unix.html">UNIX Commands and Bash Scripts</a>
 							<a href="git.html"> Version Control Using Git </a>
+							<a href="stats_1.html"> Statistical Processes </a>
 
 						</div>
 					</div>
@@ -95,7 +108,6 @@
   </script>
   
   
-  
 <!-- ------------------------------------------------------------------------------------------------				 -->
 <header>
 
@@ -127,17 +139,20 @@
 		
 			<h3 style="color: aliceblue"  > 			   </h3>
 	  
-			<p style="color: rgb(255, 255, 255); line-height: 1.5; "> 				
-				<strong>Fig.1</strong>: Access mounted drive in Virtral machines with root privileges. 
-				</p>
+
 				
 	 
  
 	 
 					   <h3 style="color: aliceblue" >  . </h3>
-					   <img src=" static/figures/in_out.png" class="transparent-image2" class="fluidimg" width="700" height="500" />
-					   <p style="color: rgb(255, 255, 255);">  <strong>Fig.3</strong>: "Standard input, output and error </p>
- 
+					   <img src=" static/figures/mount.png" class="transparent-image2" class="fluidimg" width="700" height="500" />
+					   <p style="color: rgb(255, 255, 255); line-height: 1.5; "> 				
+						<strong>Fig.1</strong>: Access mounted drive in Virtral machines with root privileges.
+						 This is useful when you want to directly share drive between your local computer and Virtral Machine.
+						</p>
+						<img src=" static/figures/port_2.png" class="transparent-image2" class="fluidimg" width="700" height="300" />
+						<p style="color: rgb(255, 255, 255);">  <strong>Fig.2</strong>: Click the "+" on the right corner, and enter the port information. Restart your VM.</p>
+			 
 
 					   <h3  style="color: aliceblue", class="header-h1"> . </h3>
 	   	 
@@ -145,9 +160,13 @@
 		<article class="footer_column">
 		  <h3  style="color: aliceblue", class="header-h1"> . </h3>
 		   <p style="color: rgb(255, 255, 255);">  </p>
-		   <img src=" static/figures/mount.png" class="transparent-image2" class="fluidimg" width="700" height="500" />
-			<p style="color: rgb(255, 255, 255);">  <strong>Fig.1</strong>: basic commands. </p>
- 
+		   <img src=" static/figures/port_1.png" class="transparent-image2" class="fluidimg" width="700" height="500" />
+			<p style="color: rgb(255, 255, 255);">  <strong>Fig.2</strong>: Port forwarding between your local computer and Virtral Machine. 
+			Open the VM setting, and looking for Port forwarding under advanced. </p>
+ 		   <img src=" static/figures/port_3.png" class="transparent-image2" class="fluidimg" width="700" height="250" />
+			<p style="color: rgb(255, 255, 255);">  <strong>Fig.3</strong>: When the port forwarding between your local computer and Virtral Machine is established,
+				you can directly send messages from your local computer to the virtual machine.
+			 </p>
 			
 			<p style="color: rgb(255, 255, 255);">  . </p>
 			<p style="color: rgb(255, 255, 255);">  . </p>
@@ -166,14 +185,14 @@
 			
 	 
 
+		</div>
 
-
-					
+	
 			<footer>
-			</div>
+			</div>	
 				<div class="copyright">&copy;2023 Zihang Wang@UCSB</div>
 		</footer>
-		</div>
+		
 
 
 	  

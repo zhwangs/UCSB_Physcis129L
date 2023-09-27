@@ -46,7 +46,9 @@
 
 }
 
-
+.math{
+	color: white;
+}
 .main {
     margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
@@ -153,9 +155,19 @@
 	 
 }
 /* Show the dropdown content when hovering over the dropdown button */
-.dropdown:hover .dropdown-content {
-	display: block;
+/* Set the initial state to hide .dropdown-content */
+/* Set the initial state to hide .dropdown-content */
+.dropdown-content {
+    display: none;
 }
+
+/* Display .dropdown-content when .dropdown is hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+ 
 .show {
     display: block;
 }
@@ -336,4 +348,5 @@
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
+ 
 }

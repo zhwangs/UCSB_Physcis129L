@@ -122,6 +122,7 @@
 		border-bottom: 1px solid #333;
 		text-align: left;
 		font-size: 18px;
+		
 }
 
 .gn-menu li:not(:first-child),
@@ -139,6 +140,7 @@
 
 .gn-submenu li a {
 		color: #333;
+		
 }
 
 input.gn-search {
@@ -315,6 +317,7 @@ input.gn-search:focus {
 
 .gn-menu-wrapper.gn-open-all .gn-submenu li {
 		height: 60px
+		
 }
 
 @media screen and (max-width: 422px) { 

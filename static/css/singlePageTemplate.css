@@ -203,6 +203,8 @@ footer {
 	width: 50%;
 	text-align: center;
 	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 	float: left;
 }
 footer .footer_column h3 {

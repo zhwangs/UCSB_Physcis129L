@@ -13,3 +13,20 @@ window.onclick = function(e) {
   }
 }
 
+let timeoutId;
+
+function showDropdownContent() {
+    clearTimeout(timeoutId);
+    const dropdownContent = document.getElementById("dropdown-content");
+    dropdownContent.style.display = "block";
+    dropdownContent.style.opacity = 1;
+}
+
+function hideDropdownContent() {
+    const dropdownContent = document.getElementById("dropdown-content");
+    // Set a timeout to hide the dropdown-content after 10 seconds
+    timeoutId = setTimeout(function () {
+        dropdownContent.style.display = "none";
+        dropdownContent.style.opacity = 0;
+    }, 10000); // 10 seconds in milliseconds
+}

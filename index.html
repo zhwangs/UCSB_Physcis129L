@@ -17,6 +17,18 @@
 <link href=" static/css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
 <link href=" static/css/layout1.css" rel="stylesheet" type="text/css">
 	<script src=" static/js/mainpage.js"></script>
+
+	<script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      }
+    });
+  </script>
 	</head>
 	<body>
 <!-- ------------------------------------------------------------------------------------------------				 -->
@@ -35,7 +47,7 @@
 					  
 
 					  <li><a class="gn-icon gn-icon-cog", href="announcements.html">Announcements</a></li>
-					   <div class="dropdown">
+					   <div class="dropdown" >
 						  <div class="dropdown-button"><li><a class="gn-icon gn-icon-cog", href="courseinformation.html">Course Information</a></li>
 						  </div>
 						  <div class="dropdown-content">
@@ -52,6 +64,7 @@
 						<div class="dropdown-content">
 							<a href="unix.html">UNIX Commands and Bash Scripts</a>
 							<a href="git.html"> Version Control Using Git </a>
+							<a href="stats_1.html"> Statistical Processes </a>
 
 						</div>
 					</div>
@@ -151,10 +164,12 @@
   </section> -->
   <!-- More Info Section -->
   <footer>
+
     <div class="sec3-container">
+	
     <article class="footer_column">
       <h3 class="header-h1">Course Description</h3>
-      <!-- <img src=" static/figures/Jupternew.png" class="fluidimg_small_left"> -->
+    <!-- <img src=" static/figures/Jupternew.png" class="fluidimg_small_left"> -->
       <p style="color: rgb(255, 255, 255);">This course is a physics orientated survey of basic concepts in modern computation, and the following outline is subject to change. 
 		1) Foundations of modern computation, hardware and software, input/output (I/O), UNIX operating system (os), UNIX shell and file management, bash script, version control, network, data acquisition (DAQ)*. 
 		2) An introduction to Python, basic programming, data structures, read/write, functions, scoping*, objects, error handling*, debugging*, pipe*, parallel computing. 
