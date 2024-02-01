@@ -186,9 +186,22 @@
 							  Let's recall the Stern-Gerlach experiment of a beam of electrons. 
 							  When $p \to 0$, the binomial distribution becomes the Poisson distribution. 
 							  We should note that the number of total events goes to infinity.  </p>
-			  
 
-					</article>
+							  <p style="color: rgb(255, 255, 255); line-height: 1.5; "> Let's consider an example, assume stars randomly distributed around us with density n, what is probability that the nearest star is at distance $R$ ? Let's first consider the total number of stars within a differential volume, </p>
+							  <div class="math">$$       N=ndV=4\pi R^2 n dR. $$</div>
+							  <p style="color: rgb(255, 255, 255); line-height: 1.5; "> The probability of have no stars within $R$ is given by a Poisson process,  </p>
+							  <div class="math">$$         p(R>r,\text{{0 star}}|n) \sim  \frac{(ndV)^0}{0!} e^{-n \frac{4\pi}{3} R^3 }, $$</div>
+							  <p style="color: rgb(255, 255, 255); line-height: 1.5; "> and it is worth noting that it only tells a proportionality without normalization. Similarly, the probability of having one star within the radius is proportional to the following, </p>
+							  <div class="math">$$         p(r \approx R,\text{{1 star}}|n) \sim  
+								\frac{(ndV)^1}{1!}e^{-dV}=\frac{(n4\pi R^2 dR)^1}{1!} e^{-n4\pi R^2 dR }. $$</div>
+								<p style="color: rgb(255, 255, 255); line-height: 1.5; "> Therefore, the joint probability has the product form, </p>
+								<div class="math">$$      \begin{aligned}
+									& p(R>r,\text{{0 star}}, r \approx R,\text{{1 star}}|n) =     p(R>r,\text{{0 star}}|n) p(r \approx R,\text{{1 star}}|n) \\ &\sim   n4\pi R^2 dR   e^{-n4\pi R^2 dR }  e^{-n \frac{4\pi}{3} R^3 } \approx   n4\pi R^2 dR   e^{-n \frac{4\pi}{3} R^3 }.
+								\end{aligned} $$</div>
+ 
+								
+							</article>
+
 		<article class="footer_column">
  
 
@@ -251,6 +264,11 @@
 										solely on observed data. The choice between the two approaches often depends 
 										on the specific problem and available data.
 									  </p>
+									  <h3 style="color: aliceblue", class="header-h1"> .</h3>
+									  <h3 style="color: aliceblue", class="header-h1"> .</h3>
+
+									  <h3 style="color: aliceblue", class="header-h1"> .</h3>
+									  <h3 style="color: aliceblue", class="header-h1"> .</h3>
 									  <h3 style="color: aliceblue", class="header-h1"> .</h3>
 									  <h3 style="color: aliceblue", class="header-h1"> .</h3>
 
