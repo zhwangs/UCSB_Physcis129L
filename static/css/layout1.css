@@ -219,6 +219,12 @@
     left: 300px;
 } 
 
+.center-post-problem_set{
+	position: relative;
+    top: 150px;
+    left: 350px;
+} 
+
 .logo-loc{
     position: relative;
     text-align: center;
